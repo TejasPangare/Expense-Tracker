@@ -1,0 +1,138 @@
+@charset "UTF-8";
+@media (max-width: 730px) {
+
+	body{
+		width: 160vw
+	}
+h1 {
+    margin-bottom: 20px;
+    color: #ffff;
+    margin-top:10vh;
+}
+
+table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: #1f1e41;
+    color: white;
+    box-shadow: 0px 0px 20px rgb(46, 44, 44);
+    overflow: hidden;
+    border: 15px solid black;
+    border-style: double none;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+tr:hover {
+    background-color: #1f1e13;
+    transition: .2s;
+}
+
+td {
+    font-size: 1rem;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.buttons a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    padding: 10px;
+    font-size: 1rem;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth transition */
+}
+
+button:hover {
+    background-color: #419244;
+}
+.bottom {
+    padding: .5rem;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow wrapping on small screens */
+}
+
+.bottom button {
+    font-size: small;
+    font-weight: 700;
+    flex: 1 1 30%; /* Make buttons flexible and responsive */
+    margin: 5px; /* Add margin for spacing */
+}
+
+input, select {
+    outline: none;
+    border: none;
+    background: #4CAF50;
+    padding: .5rem;
+    color: white;
+    font-size: medium;
+}
+
+.options {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.options a {
+    color: white;
+    background: #525252;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-top: 5px;
+    font-weight: 200;
+}
+
+.options a:hover {
+    background: #313131;
+    transition: .3s;
+}
+    .buttons {
+        flex-direction: column; /* Stack action buttons vertically */
+    }
+
+    .bottom {
+        flex-direction: column; /* Stack sorting buttons vertically */
+        align-items: center; /* Center the buttons */
+    }
+
+    .bottom button {
+        width: 100%; /* Full width buttons */
+        margin: 5px 0; /* Margin for spacing */
+    }
+
+    input, select {
+        width: 100%; /* Full width input/select on small screens */
+    }
+    .home-logout{
+            position: fixed;
+            top: 0.5rem;
+            left: 0.5rem;
+            display: flex;
+            gap: 1rem;
+        }
+}
